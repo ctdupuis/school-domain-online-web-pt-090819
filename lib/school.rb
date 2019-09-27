@@ -1,5 +1,6 @@
 class School
   # ROSTER = {} <= that didn't work as a variable, but @roster did. Why?
+  #can also use attr_accessor for name/roster
   
   def initialize(name)
     @name = name
@@ -25,7 +26,7 @@ class School
   
   def sort 
     @roster.each do |key, value|
-      value.sort!  #what does the bang operator do right here?
+      value.sort!  
     end
   end
 end
